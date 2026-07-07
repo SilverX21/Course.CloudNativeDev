@@ -484,3 +484,4 @@ $RECYCLE.BIN/
 .idea/*
 Claude.md
 .claude/*
+Course.CloudNativeDev.Api/appsettings.Development.json
