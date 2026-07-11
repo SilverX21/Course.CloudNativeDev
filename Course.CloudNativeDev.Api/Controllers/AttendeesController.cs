@@ -69,7 +69,7 @@ public class AttendeesController(AppDbContext context) : ControllerBase
         {
             Id = Guid.NewGuid(),
             FirstName = request.FirstName,
-            LAstNAme = request.LastName,
+            LastName = request.LastName,
             EmailAddress = request.EmailAddress,
             PhoneNumber = request.PhoneNumber,
             CompanyName = request.CompanyName,

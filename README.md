@@ -35,6 +35,17 @@ For MacOS:
 
 This will run the docker container with on the port 1433 (default for SQL Server)
 
+### Seq (logging)
+
+Pull and run the [Seq](https://hub.docker.com/r/datalust/seq) container, used by Serilog for structured log viewing:
+
+```bash
+docker pull datalust/seq
+docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -e SEQ_FIRSTRUN_NOAUTHENTICATION=true -p 5341:80 datalust/seq
+```
+
+Open `http://localhost:5341` to view logs in the Seq UI.
+
 ## 2. Running with the VS Code Container Profile
 
 This setup runs both the API and the database in Docker containers, with the VS Code debugger attached to the API — the same experience as Visual Studio's "Container (Dockerfile)" profile.

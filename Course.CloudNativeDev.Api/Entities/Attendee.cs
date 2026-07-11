@@ -8,7 +8,7 @@ public class Attendee : BaseEntity
     public string FirstName { get; set; }
 
     [StringLength(50)]
-    public string LAstNAme { get; set; }
+    public string LastName { get; set; }
 
     [StringLength(150)]
     public string EmailAddress { get; set; }
